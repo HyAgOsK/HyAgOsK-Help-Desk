@@ -91,17 +91,20 @@
                 <?php 
                   $chamado_dados = explode('#', $chamado);
                   //aqui teremos os dados sendo separados ao inves de unidos com implode(), explode() retorna um array
-                  if (count(($chamado_dados))<3) {
+                  if (count(($chamado_dados))<3 || $chamado_dados[1] == '' || $chamado_dados[2] == '' || $chamado_dados[3] == '') {
                     //continuamos para impressão, e não será impresso o dado
                     continue;
                   }
+                  print_r ($chamado_dados)   ;
                 ?>
                 <div class="card mb-3 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title"><?=$chamado_dados[1]?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?=$chamado_dados[2]?></h6>
-                    <p class="card-text"><?=$chamado_dados[3]?></p>
-                  </div>
+                  <form method="GET">
+                      <div class="card-body">
+                          <h5 class="card-title" name ="titulo"><?=$chamado_dados[1]?></h5>
+                          <h6 class="card-subtitle mb-2 text-muted" name ="categoria"><?=$chamado_dados[2]?></h6>
+                          <p class="card-text" name ="descricao"><?=$chamado_dados[3]?></p>
+                        </div>
+                  </form>
                 </div>
               <?}?>
 
