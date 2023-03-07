@@ -20,7 +20,10 @@
 	$texto = $_SESSION['id']. '#' .$titulo.'#'. $categoria.'#'.$descricao . PHP_EOL;
 	// nao podemos usar # para separar os dados pois se conter isso pode misturar e ai fudeu 
 	//ao fazer outro arquivo ele fica na mesma linha do chamado anterior, isso pode ser ajustado com constante do PHP PHP_EOL ou | pipe 
-
+	if ($texto == '2###'.PHP_EOL || $texto == '1###'.PHP_EOL) {
+        //continuamos para impressão, e não será impresso o dado	
+		echo  "<script>alert('Email enviado com Sucesso!');</script>";
+ 	}
 
 	//funcao nativa do php
 	//hd pode ser extensão qualquer é texto puro

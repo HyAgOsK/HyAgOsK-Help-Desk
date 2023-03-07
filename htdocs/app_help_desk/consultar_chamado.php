@@ -95,7 +95,6 @@
                     //continuamos para impressão, e não será impresso o dado
                     continue;
                   }
-                  print_r ($chamado_dados)   ;
                 ?>
                 <div class="card mb-3 bg-light">
                   <form method="GET">
