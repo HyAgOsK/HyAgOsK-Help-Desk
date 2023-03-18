@@ -1,5 +1,5 @@
 # HyAgOsK-Help-Desk
-HyAgOsK Help Desk descreve Ordens de serviço para pessoas previamente cadastrada, podemos com adm e usuários, acessar a aplicação. Códigos com PHP e Apache, utilizando CSS6 (bootstrap) HTML5.
+HyAgOsK Help Desk descreve Ordens de serviço para pessoas previamente cadastrada, podemos com adm e usuários, acessar a aplicação. Códigos utilizando CSS6 (bootstrap) HTML5, PHP e Apache, com XAMPP, no caso estas pastas todas estariam dentro do diretório XAMPP.
 
 #### Esta aplicação permite visualização ordenada dos dados salvos por último, de cada usuário, que possui seu login registrado em hardcode, onde teríamos para cada usuário comum a visualização das suas OS Ordens de Serviço que foram registradas por elas mesmo, sem visualizar a do próximo e apenas os adms, que também possuem login registrado em hardcode possui visualização global de todos os registros que foram salvos pelos usuários.
 
